@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/id"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="id:Long" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="timeStamp:Date" />
+
+    <TextView
+        android:id="@+id/instrumentName"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="instrumentName" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="price:Double" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="amount:Double" />
+
+    <TextView
+        android:id="@+id/side"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="side:Side" />
+
+</LinearLayout>
