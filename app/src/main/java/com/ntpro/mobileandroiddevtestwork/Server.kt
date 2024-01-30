@@ -72,6 +72,7 @@ class Server {
         return min + Random.nextDouble() * (max - min)
     }
 
+
     data class Deal(
         val id: Long,
         val timeStamp: Date,

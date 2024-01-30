@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MobileAndroidDevTestWork</string>
+    <string name="time_stamp">дата изменения сделки</string>
+    <string name="instrument_name">имя инструмента</string>
+    <string name="price">цена сделки</string>
+    <string name="amount">объем сделки</string>
+    <string name="side">сторона сделки</string>
+    <string name="side_item">side</string>
+    <string name="time_stamp_item">timeStamp</string>
+    <string name="instrument_name_item">instrumentName</string>
+    <string name="price_item">price</string>
+    <string name="amount_item">amount</string>
+    <string name="id_item">id</string>
+
 </resources>

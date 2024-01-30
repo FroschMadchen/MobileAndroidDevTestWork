@@ -4,13 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:padding="@dimen/padding_sides">
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/icon_swap"
+            />
+        <Spinner
+            android:id="@+id/spinner"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/box" >
 
         <TextView
             android:id="@+id/id"
@@ -19,8 +45,8 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-black"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
-            android:text="id" />
+            android:padding="@dimen/padding_sides_little"
+            android:text="@string/id_item" />
 
         <TextView
             android:id="@+id/timeStamp"
@@ -28,9 +54,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/padding_sides_little"
             android:fontFamily="sans-serif-black"
-            android:text="timeStamp" />
+            android:text="@string/time_stamp_item" />
 
         <TextView
             android:id="@+id/instrumentName"
@@ -38,9 +64,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/padding_sides_little"
             android:fontFamily="sans-serif-black"
-            android:text="instrumentName" />
+            android:text="@string/instrument_name_item" />
 
         <TextView
             android:id="@+id/price"
@@ -48,9 +74,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/padding_sides_little"
             android:fontFamily="sans-serif-black"
-            android:text="price" />
+            android:text="@string/price_item" />
 
         <TextView
             android:id="@+id/amount"
@@ -58,9 +84,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/padding_sides_little"
             android:fontFamily="sans-serif-black"
-            android:text="amount" />
+            android:text="@string/amount" />
 
         <TextView
             android:id="@+id/side"
@@ -68,9 +94,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
+            android:padding="@dimen/padding_sides_little"
             android:fontFamily="sans-serif-black"
-            android:text="side" />
+            android:text="@string/side_item" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

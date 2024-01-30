@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:padding="@dimen/padding_sides"
     android:layout_centerHorizontal="true"
     android:orientation="horizontal">
 
@@ -11,53 +11,53 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="id:Long" />
+        android:text="@string/id_item" />
 
     <TextView
         android:id="@+id/timeStamp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="timeStamp:Date" />
+        android:text="@string/time_stamp_item" />
 
     <TextView
         android:id="@+id/instrumentName"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="instrumentName" />
+        android:text="@string/instrument_name_item" />
 
     <TextView
         android:id="@+id/price"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="price:Double" />
+        android:text="@string/price_item" />
 
     <TextView
         android:id="@+id/amount"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="amount:Double" />
+        android:text="@string/amount" />
 
     <TextView
         android:id="@+id/side"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:padding="5dp"
+        android:padding="@dimen/padding_sides_little"
         android:gravity="center_vertical|center_horizontal"
-        android:text="side:Side" />
+        android:text="@string/side_item" />
 
 </LinearLayout>
